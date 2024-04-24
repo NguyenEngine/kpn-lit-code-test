@@ -1,11 +1,16 @@
 # Code test: Lit Button
-Based on the LitElement TypeScript Starter.
+Based on the LitElement TypeScript Starter project.
 
 **Click on the button and be surprised.**
 
 My focus was on getting to know LitElement framework while having something fun to show. Although the element stated that it should be for a broad audience, this one might not be for two reasons:
-1. Too many hectic visual changes
-2. Image popping up might break layout of consuming page
+1. Too many hectic visual changes might be triggering. I Would solve this by using a more neutral color and less contrasting states for hovering and active
+2. Image popping up might break layout of consuming page. I would remove this entirely in a serious project.
+
+Things I did **NOT** do:
+
+- Resetting the css, so non-intended css doesn't get leaked int
+- Have my own grid for spacing and sizes, to standardise values being used so you have equal spacing
 
 
 
