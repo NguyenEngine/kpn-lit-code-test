@@ -1,3 +1,21 @@
+# Code test: Lit Button
+Based on the LitElement TypeScript Starter project.
+
+**Click on the button and be surprised.**
+
+My focus was on getting to know LitElement framework while having something fun to show. Although the element stated that it should be for a broad audience, this one might not be for two reasons:
+1. Too many hectic visual changes might be triggering. I Would solve this by using a more neutral color and less contrasting states for hovering and active
+2. Image popping up might break layout of consuming page. I would remove this entirely in a serious project.
+
+Things I did **NOT** do:
+
+- Resetting the css, so non-intended css doesn't get leaked int
+- Have my own grid for spacing and sizes, to standardise values being used so you have equal spacing
+
+
+
+---------
+
 # LitElement TypeScript starter
 
 This project includes a sample component using LitElement with TypeScript.
@@ -5,22 +23,6 @@ This project includes a sample component using LitElement with TypeScript.
 This template is generated from the `lit-starter-ts` package in [the main Lit
 repo](https://github.com/lit/lit). Issues and PRs for this template should be
 filed in that repo.
-
-## About this release
-
-This is a pre-release of Lit 3.0, the next major version of Lit.
-
-Lit 3.0 has very few breaking changes from Lit 2.0:
-
-- Drops support for IE11
-- Published as ES2021
-- Removes a couple of deprecated Lit 1.x APIs
-
-Lit 3.0 should require no changes to upgrade from Lit 2.0 for the vast majority of users. Once the full release is published, most apps and libraries will be able to extend their npm version ranges to include both 2.x and 3.x, like `"^2.7.0 || ^3.0.0"`.
-
-Lit 2.x and 3.0 are _interoperable_: templates, base classes, directives, decorators, etc., from one version of Lit will work with those from another.
-
-Please file any issues you find on our [issue tracker](https://github.com/lit/lit/issues).
 
 ## Setup
 
@@ -47,27 +49,6 @@ npm run build:watch
 ```
 
 Both the TypeScript compiler and lit-analyzer are configured to be very strict. You may want to change `tsconfig.json` to make them less strict.
-
-## Testing
-
-This sample uses modern-web.dev's
-[@web/test-runner](https://www.npmjs.com/package/@web/test-runner) for testing. See the
-[modern-web.dev testing documentation](https://modern-web.dev/docs/test-runner/overview) for
-more information.
-
-Tests can be run with the `test` script, which will run your tests against Lit's development mode (with more verbose errors) as well as against Lit's production mode:
-
-```bash
-npm test
-```
-
-For local testing during development, the `test:dev:watch` command will run your tests in Lit's development mode (with verbose errors) on every change to your source files:
-
-```bash
-npm test:watch
-```
-
-Alternatively the `test:prod` and `test:prod:watch` commands will run your tests in Lit's production mode.
 
 ## Dev Server
 
