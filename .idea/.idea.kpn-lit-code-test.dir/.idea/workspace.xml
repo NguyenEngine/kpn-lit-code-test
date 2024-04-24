@@ -1,11 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75274ce1-6e19-4cb0-b744-93560dca305b" name="Changes" comment="" />
+    <list default="true" id="75274ce1-6e19-4cb0-b744-93560dca305b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.kpn-lit-code-test.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.kpn-lit-code-test.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lit-button.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lit-button.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lit-button.d.ts.map" beforeDir="false" afterPath="$PROJECT_DIR$/lit-button.d.ts.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lit-button.js" beforeDir="false" afterPath="$PROJECT_DIR$/lit-button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lit-button.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lit-button.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/my-element.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lit-button.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1713955680" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1713955679" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/package-lock.json" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -40,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713952368752</updated>
-      <workItem from="1713952371959" duration="2016000" />
+      <workItem from="1713952371959" duration="9480000" />
     </task>
     <servers />
   </component>
