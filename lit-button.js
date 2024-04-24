@@ -24,7 +24,7 @@ let MyElement = class MyElement extends LitElement {
     }
     render() {
         return html `
-            <button ${ref(this.buttonRef)} @click=${this._onClick} part="button">
+            <button ${ref(this.buttonRef)} @click=${this._onClick}>
                 <label for="button">🔥 Click Count:</label> ${this.count}
             </button>
             <div>
@@ -41,13 +41,13 @@ let MyElement = class MyElement extends LitElement {
     doShake() {
         const fireIcon = this.buttonRef.value;
         const maxShakeDuration = 0.15;
-        let shakeDuration = Math.min(0.067 * this.count, maxShakeDuration);
+        const shakeDuration = Math.min(0.067 * this.count, maxShakeDuration);
         fireIcon.classList.add('dynamic-shake');
         fireIcon.style.setProperty('--shake-distance', `${this.count}px`);
         fireIcon.style.setProperty('--shake-duration', `${shakeDuration}s`);
         setTimeout(() => {
             fireIcon.classList.remove('dynamic-shake');
-        }, 700);
+        }, shakeDuration * 1000);
     }
     getImageSrc() {
         return this.fireGifSources[this.clampIndex(this.count - 1)];
@@ -57,8 +57,15 @@ let MyElement = class MyElement extends LitElement {
     }
 };
 MyElement.styles = css `
+    :host {
+    --lit-active-color: #FFFFFF;
+    --lit-active-color: #FFFFFF;
+    --lit-hover-color: #eb6b34;
+    --lit-neutral-color: #5beb34;
+    }
+    
     button {
-      background-color: #6200ee;
+      background-color: var(--lit-neutral-color);
       color: white;
       padding: 8px 16px;
       font-size: 16px;
@@ -70,6 +77,13 @@ MyElement.styles = css `
    
     button:hover { 
       cursor: pointer;
+      background-color: var(--lit-hover-color);
+    }
+    
+    button:active {
+      color: black;
+      background-color: var(--lit-active-color);
+      border: 1px solid black;
     }
       
     .dynamic-shake {
