@@ -10,7 +10,7 @@ export class MyElement extends LitElement {
     --lit-active-color: #FFFFFF;
     --lit-active-color: #FFFFFF;
     --lit-hover-color: #eb6b34;
-    --lit-neutral-color: #5beb34;
+    --lit-neutral-color: #7dbf65;
     }
     
     button {
@@ -55,16 +55,15 @@ export class MyElement extends LitElement {
     @property({type: Number}) count = 0;
     buttonRef = createRef<HTMLButtonElement>();
 
-    fireGifSources =
-        [
-            "https://gifdb.com/images/high/one-piece-ace-body-on-fire-2u2nfim5jsa9qxze.gif",
-            "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGE2bmdlbzN4bXV0MmpqdDF5MzBkczUzanRkYjRrYng1aGhjZ2llciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pi0A1X7MG5TTq/giphy.gif",
-            "https://media.giphy.com/media/6r4fo21qhu7rW/giphy.gif?cid=790b7611azf0lzx13pc8v3eyt6rngb70hou9r3x3fh0sdimt&ep=v1_gifs_search&rid=giphy.gif&ct=g",
-            "https://media.giphy.com/media/XJMFmuG2zzjCE/giphy.gif?cid=790b76112wb8h2c43la5dtwnba3qo3vcjt032m7em5j8xold&ep=v1_gifs_search&rid=giphy.gif&ct=g",
-            "https://media.giphy.com/media/3XYuxLiRtIu76/giphy.gif?cid=790b76112wb8h2c43la5dtwnba3qo3vcjt032m7em5j8xold&ep=v1_gifs_search&rid=giphy.gif&ct=g",
-            "https://25.media.tumblr.com/ce4b5330ef4272c2d162ff14c55c126e/tumblr_mss2lxtJqd1sg962ho1_500.gif",
-            "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDg3MDluNWRmY2JyNW5ieG1teGVjaHBleXl4ZDg2ajB2MTE4NWpnaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yr7n0u3qzO9nG/giphy.gif"
-        ];
+    fireGifSources = [
+        "https://gifdb.com/images/high/one-piece-ace-body-on-fire-2u2nfim5jsa9qxze.gif",
+        "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGE2bmdlbzN4bXV0MmpqdDF5MzBkczUzanRkYjRrYng1aGhjZ2llciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pi0A1X7MG5TTq/giphy.gif",
+        "https://media.giphy.com/media/6r4fo21qhu7rW/giphy.gif?cid=790b7611azf0lzx13pc8v3eyt6rngb70hou9r3x3fh0sdimt&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+        "https://media.giphy.com/media/XJMFmuG2zzjCE/giphy.gif?cid=790b76112wb8h2c43la5dtwnba3qo3vcjt032m7em5j8xold&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+        "https://media.giphy.com/media/3XYuxLiRtIu76/giphy.gif?cid=790b76112wb8h2c43la5dtwnba3qo3vcjt032m7em5j8xold&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+        "https://25.media.tumblr.com/ce4b5330ef4272c2d162ff14c55c126e/tumblr_mss2lxtJqd1sg962ho1_500.gif",
+        "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDg3MDluNWRmY2JyNW5ieG1teGVjaHBleXl4ZDg2ajB2MTE4NWpnaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yr7n0u3qzO9nG/giphy.gif"
+    ];
     
     override render() {
         return html`

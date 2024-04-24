@@ -61,7 +61,7 @@ MyElement.styles = css `
     --lit-active-color: #FFFFFF;
     --lit-active-color: #FFFFFF;
     --lit-hover-color: #eb6b34;
-    --lit-neutral-color: #5beb34;
+    --lit-neutral-color: #7dbf65;
     }
     
     button {
