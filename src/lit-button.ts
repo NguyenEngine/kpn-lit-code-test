@@ -67,7 +67,7 @@ export class MyElement extends LitElement {
     
     override render() {
         return html`
-            <button ${ref(this.buttonRef)} @click=${this._onClick}>
+            <button ${ref(this.buttonRef)} @click=${this.onClick}>
                 <label for="button">🔥 Click Count:</label> ${this.count}
             </button>
             <div>
@@ -76,7 +76,7 @@ export class MyElement extends LitElement {
         `;
     }
 
-    private _onClick() {
+    private onClick() {
         this.count++;
         this.doShake();
         
