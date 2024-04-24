@@ -24,7 +24,7 @@ let MyElement = class MyElement extends LitElement {
     }
     render() {
         return html `
-            <button ${ref(this.buttonRef)} @click=${this._onClick}>
+            <button ${ref(this.buttonRef)} @click=${this.onClick}>
                 <label for="button">🔥 Click Count:</label> ${this.count}
             </button>
             <div>
@@ -32,7 +32,7 @@ let MyElement = class MyElement extends LitElement {
             </div>
         `;
     }
-    _onClick() {
+    onClick() {
         this.count++;
         this.doShake();
         // event for external listeners

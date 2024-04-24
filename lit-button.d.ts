@@ -5,7 +5,7 @@ export declare class MyElement extends LitElement {
     buttonRef: import("lit-html/directives/ref").Ref<HTMLButtonElement>;
     fireGifSources: string[];
     render(): import("lit-html").TemplateResult<1>;
-    private _onClick;
+    private onClick;
     private doShake;
     private getImageSrc;
     private clampIndex;
