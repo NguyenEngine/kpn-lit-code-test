@@ -1,11 +1,11 @@
 # Code test: Lit Button
 Based on the LitElement TypeScript Starter.
 
-Click on the button and be surprised.
+**Click on the button and be surprised.**
 
 My focus was on getting to know LitElement framework while having something fun to show. Although the element stated that it should be for a broad audience, this one might not be for two reasons:
 1. Too many hectic visual changes
-2. Image popping up might break layout of consuming page,
+2. Image popping up might break layout of consuming page
 
 
 
